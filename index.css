@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,700');
+
+
+
+
+/*GENERAL*/
+
+body {
+	background-color: #111;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #eee;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin-top: 0
+}
+
+p {
+	font-size: 1em;	
+	margin-top: 0
+}
+
+a:visited {
+	color: #eee;
+
+}
+
+
+
+/*NAVIGATION BAR*/
+
+header {
+	background-color: #eee;
+	color: #777;
+}
+
+
+div.nav {
+	text-align: center;
+}
+ 
+div.nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 10px
+}
+ 
+div.nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s background-color;
+
+}
+ 
+div.nav a:hover {
+  background-color: #999;
+}
+
+div.nav a:visited {
+  color: #777;
+}
+ 
+div.nav a.active {
+  background-color: #999;
+  cursor: default;
+}
+
+
+ 
+
+
+
+
+
+
+/*SECTIONS*/
+
+section {
+	text-align: center;
+
+	width: 100%;
+	height: 310px;
+
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	margin: auto;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+section.section-black {
+
+	background-color: #111;
+	color: #eee;
+
+}
+
+section.section-white {
+
+	background-color: #eee;
+	color: #777;
+
+}
+
+section.section-student-center {
+
+	background-color: #2460A1;
+	color: #eee;
+	height: 200px;
+	font-size: .8em;
+
+
+}
+
+
+#centerpiece {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/candid.jpg);
+}
+
+
+#about {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/);
+}
+
+
+#services {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/group.jpg);
+}
+
+
+#general {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/);
+}
+
+
+#testimonials {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(images/photobooth.jpg);
+}
+
+
+
+
+
+
+
+/*TEXT*/
+
+div.section-text {
+	padding: 15%;
+}
+
+
+
+/*SPECIFIC STYLING*/
+
+p.button {
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 5px;
+}
+
+.testimonial {
+	display: inline-block;
+	width: 35%;
+	margin: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 0;
+	font-size: .6em;
+}
+
+
+/*FOOTER*/
+
+
+footer div {
+	font-size: .8em;
+	display: inline-block;
+	padding: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.footer-left {
+	text-align: left;
+}
+
+.footer-right {
+	float: right;
+	text-align: right;
+}
+
+
+
+
+
+
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (min-width: 600px) {
+	div.nav li {
+		width: 20%;
+		border-bottom: none;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	/* inline */
+	div.nav li {
+		display: inline-block;
+		margin-right: -4px;
+	}
+
+ 
+  /* OR Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+	section {
+		height: 500px;
+	}
+
+
+}
+
